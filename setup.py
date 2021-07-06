@@ -4,9 +4,19 @@
 
 from __future__ import print_function
 
-import sys
 from distutils.core import setup  # , Extension, Command
 
+PREREQS = """
+numpy
+matplotlib
+scipy
+pyyaml
+typer
+numpy
+matplotlib
+scipy
+webdataset@git+git://github.com/tmbdev/webdataset.git
+""".split()
 
 scripts = """
 """.split()
@@ -18,9 +28,5 @@ setup(
     description="Document image degradation and augmentation for OCR.",
     packages=["ocrodeg"],
     scripts=scripts,
-    install_requires=[
-        'numpy',
-        'matplotlib',
-        'scipy'
-    ],
+    install_requires=PREREQS
 )

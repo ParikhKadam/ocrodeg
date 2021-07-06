@@ -1,3 +1,7 @@
+#click==7.1.2
+pyyaml
+typer
 numpy
 matplotlib
 scipy
+-e git+git://github.com/tmbdev/webdataset.git#egg=webdataset
