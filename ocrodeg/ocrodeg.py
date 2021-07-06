@@ -53,7 +53,7 @@ class Degrade:
 @app.command()
 def degrade(
     fname: str,
-    extensions: str = "jpg;jpeg;png",
+    extensions: str = "jpg;jpeg;png;page.jpg;page.png;bin.jpg;bin.png",
     display: int = -1,
     maxrec: int = 999999999,
     output: str = None,
